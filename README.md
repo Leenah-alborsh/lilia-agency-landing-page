@@ -80,11 +80,31 @@ docker run -p 9090:80 lilia-agency
 3️⃣ Open in Browser
 ```bash
 http://localhost:9090
+
+## 🌐 Live Demo
+🔗 https://leenah-alborsh.github.io/lilia-digital-agency/
+
+```
+## 🚀 How to Run
+
+### Clone
+```bash
+git clone https://github.com/Leenah-alborsh/lilia-digital-agency.git
+cd lilia-digital-agency
+```
+Using Chrome locally
+
+Open index.html
+
+With Docker
+```bash
+docker build -t lilia-agency .
+docker run -p 9090:80 lilia-agency
 ```
 👩‍💻 Author
 
 Leenah Alborsh
-Frontend Developer & Software Development Student
+Full Stack Developer & Software Development Student
 
 GitHub: https://github.com/Leenah-alborsh
 
