@@ -85,7 +85,6 @@ http://localhost:9090
 ## 🌐 Live Demo
 🔗 https://leenah-alborsh.github.io/lilia-digital-agency/
 
-```
 ## 🚀 How to Run
 
 ### Clone
