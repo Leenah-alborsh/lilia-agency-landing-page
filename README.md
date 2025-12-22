@@ -68,6 +68,7 @@ lilia-digital-agency/
 └── README.md
 ```
 🚀 Run Project with Docker
+
 1️⃣ Build Docker Image
 ```bash
 docker build -t lilia-agency .
