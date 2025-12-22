@@ -1,0 +1,156 @@
+.counter-section {
+  width: 100%;
+  padding: 150px 0 120px;
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  position: relative;
+  background: #fff;
+  z-index: 2;
+}
+
+.counter-section .shape {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  opacity: 0.65;
+}
+
+.shape.circle {
+  border-radius: 50%;
+}
+
+.shape.square {
+  transform: rotate(45deg);
+}
+
+.shape.s1 {
+  background: #ffb692;
+  top: 20%;
+  left: 22%;
+}
+.shape.s2 {
+  background: #8ae68a;
+  top: 40%;
+  left: 8%;
+}
+.shape.s3 {
+  background: #ff8a8a;
+  top: 10%;
+  left: 55%;
+}
+.shape.s4 {
+  background: #8da6ff;
+  top: 70%;
+  left: 72%;
+}
+.shape.s5 {
+  background: #8ae68a;
+  top: 65%;
+  left: 35%;
+}
+.shape.s6 {
+  background: #ffb692;
+  top: 85%;
+  left: 15%;
+}
+
+.counter-card {
+  width: 185px;
+  height: 185px;
+  border-radius: 30px;
+  transform: rotate(45deg);
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+  position: relative;
+  z-index: 3;
+}
+
+.counter-card h2,
+.counter-card p {
+  transform: rotate(-45deg);
+  margin: 0;
+  text-align: center;
+}
+
+.counter-card h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.counter-card p {
+  font-size: 18px;
+  color: #444;
+}
+
+.counter-card.orange {
+  border: 3px solid #ff9c66;
+  background: #fcd5bd;
+  box-shadow: 0 0 30px #ff9c6644;
+}
+
+.counter-card.green {
+  border: 3px solid #7fe08b;
+  background: #d7ffd9;
+  box-shadow: 0 0 30px #7fe08b55;
+  margin-top: 40px;
+}
+
+.counter-card.red {
+  border: 3px solid #ff7b7b;
+  background: #ffd6d6;
+  box-shadow: 0 0 30px #ff7b7b55;
+  margin-top: -40px;
+}
+
+.counter-card.blue {
+  border: 3px solid #8e9bff;
+  background: #e0e6ff;
+  box-shadow: 0 0 30px #8e9bff55;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE   */
+
+@media (max-width: 992px) {
+  .counter-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 100px 0;
+  }
+
+  .counter-card {
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .counter-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .counter-card {
+    width: 160px;
+    height: 160px;
+  }
+
+  .counter-card h2 {
+    font-size: 32px;
+  }
+
+  .counter-card p {
+    font-size: 16px;
+  }
+  .counter-card.green,
+  .counter-card.red,
+  .counter-card.blue {
+    margin-top: 10px !important;
+  }
+}

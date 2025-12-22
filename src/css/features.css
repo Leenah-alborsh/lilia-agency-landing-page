@@ -1,0 +1,111 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 50px;
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.card {
+  background: #fff;
+  padding: 50px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.4s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+.card i {
+  font-size: 35px;
+  margin: 0 auto 20px auto;
+  height: 70px;
+  width: 70px;
+  border: 3px solid #ffc34f;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  line-height: 1 !important;
+  padding: 0 !important;
+  transform: none !important;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.card p {
+  color: gray;
+  transition: 0.4s;
+}
+
+.card.orange:hover {
+  background: #ffb03b !important;
+  box-shadow: 0px 10px 30px rgba(255, 150, 50, 0.4);
+}
+
+.card.green:hover {
+  background: #3cb371 !important;
+  box-shadow: 0px 10px 30px rgba(166, 246, 192, 0.4);
+}
+
+.card.red:hover {
+  background: #ff6f61 !important;
+  box-shadow: 0px 10px 30px rgba(253, 88, 119, 0.4);
+}
+
+.card:hover i {
+  color: white !important;
+  border-color: white;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.card:hover h3,
+.card:hover p {
+  color: white !important;
+}
+
+.feature-circle {
+  position: absolute;
+  top: -80px;
+  right: -120px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 25px solid rgba(255, 170, 90, 0.15);
+  background: transparent;
+  z-index: 0;
+}
+
+/* RESPONSIVE*/
+@media (max-width: 900px) {
+  .features-section {
+    padding: 60px 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100% !important;
+  }
+
+  .card {
+    width: 100%;
+    margin: auto;
+  }
+
+  .feature-circle {
+    opacity: 0.25;
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    right: -80px;
+  }
+}

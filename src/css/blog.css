@@ -1,0 +1,144 @@
+.blog-section {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.blog-container {
+  width: 85%;
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.blog-card {
+  width: 350px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.35s ease;
+  cursor: pointer;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.blog-img {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.blog-card:hover .blog-img img {
+  transform: scale(1.06);
+}
+
+.date-badge {
+  position: absolute;
+  right: 22px;
+  bottom: 15px;
+  width: 58px;
+  height: 58px;
+  background: #ff9f6a;
+  color: white;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+.blog-content {
+  padding: 30px;
+  text-align: left;
+}
+
+.blog-content h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.blog-content p {
+  color: #666;
+  font-size: 15px;
+  line-height: 26px;
+  height: 78px;
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+
+.blog-footer {
+  padding-top: 15px;
+  border-top: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.blog-footer span {
+  color: #777;
+}
+
+.blog-footer a {
+  color: #ff6f61;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.blog-footer a:hover {
+  color: #ff3c2f;
+}
+
+/*  RESPONSIVE  */
+
+@media (max-width: 992px) {
+  .blog-container {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .blog-card {
+    width: 45%;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 900px) {
+  .blog-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .blog-card {
+    width: 90%;
+    max-width: 380px;
+  }
+
+  .blog-img {
+    height: 220px;
+  }
+
+  .date-badge {
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
