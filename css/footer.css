@@ -72,3 +72,66 @@
   color: #ff975a;
   font-weight: bold;
 }
+/* =====================
+   Responsive Footer
+===================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .footer-container {
+    width: 90%;
+  }
+
+  .footer-content {
+    gap: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: left;
+    gap: 35px;
+  }
+
+  .footer-col a {
+    justify-content: center;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .footer {
+    padding: 50px 0 20px;
+  }
+
+  .footer-col h2,
+  .footer-col h3 {
+    font-size: 18px;
+  }
+
+  .footer-col p,
+  .footer-col a {
+    font-size: 14px;
+  }
+
+  .icons button {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+  }
+
+  .rights {
+    font-size: 13px;
+  }
+}
+
